@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b963e1dd0f74f1d4f95a1e9845a0b41f, type: 3}
+  m_Name: AnomalyBiome
+  m_EditorClassIdentifier: 
+  biomeName: Anomaly
+  colorGradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  numberOfLevels: 8
+  extrusionAmount: 8
+  noiseSize: 10
+  noiseType: 0
+  fractalType: 1
+  octaves: 3
+  frequency: 0.0186
+  lacunarity: 1.95
+  gain: 0.42
+  treePrefabs:
+  - {fileID: 6757368561537833919, guid: b2369cb6780523d46a60c771bb39e535, type: 3}
+  - {fileID: 213326223909226324, guid: deeee71a4091af54c972b5b8b6c41036, type: 3}
+  - {fileID: 5139863098665676719, guid: 4fd726fefb4c1464bb91d08148a99c10, type: 3}
+  spawnTrees: 0
+  minElevationForTrees: 2
+  maxElevationForTrees: 10
+  treeDensity: 0.594
+  treeDensityNoiseSize: 10.45
+  treeTypeNoiseSize: 14.81
+  anomalyPrefab:
+  - {fileID: 5296250784356844361, guid: cf7bd330ac8fc7c449ed7c26e4662571, type: 3}
+  - {fileID: 3171083539283125536, guid: 43c59019a2b148e4db9091431eced1ab, type: 3}
+  - {fileID: 6111901157069504655, guid: 539ec9070ab8a80468295988c99a45ab, type: 3}
+  spawnAnomalies: 0
+  minElevationForAnomalies: 3
+  maxElevationForAnomalies: 7
+  anomalyDensity: 0.221
+  anomalyDensityNoiseSize: 6.08
+  anomalyTypeNoiseSize: 11.3

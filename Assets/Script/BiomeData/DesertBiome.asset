@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b963e1dd0f74f1d4f95a1e9845a0b41f, type: 3}
+  m_Name: DesertBiome
+  m_EditorClassIdentifier: 
+  biomeName: Desert
+  colorGradient:
+    serializedVersion: 2
+    key0: {r: 0.26415092, g: 0.15138106, b: 0.068529725, a: 1}
+    key1: {r: 1, g: 0.15040098, b: 0.035294116, a: 1}
+    key2: {r: 1, g: 0.39607844, b: 0.03529412, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 33924
+    ctime1: 36623
+    ctime2: 56669
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 3
+    m_NumAlphaKeys: 2
+  numberOfLevels: 6
+  extrusionAmount: 2
+  noiseSize: 5.9
+  noiseType: 0
+  fractalType: 2
+  octaves: 2
+  frequency: 0.024
+  lacunarity: 1.69
+  gain: 0.285
+  treePrefabs:
+  - {fileID: 1672192438965420614, guid: 290b36ca07fda104db5947a162795a2d, type: 3}
+  - {fileID: 136472, guid: e9ef501c03d9e0f4f8965162fd6bfbba, type: 3}
+  - {fileID: 110776, guid: 63ff2386a1262d64f99de6e3e1183874, type: 3}
+  spawnTrees: 1
+  minElevationForTrees: 1
+  maxElevationForTrees: 8
+  treeDensity: 0.317
+  treeDensityNoiseSize: 7.1
+  treeTypeNoiseSize: 11.1
+  anomalyPrefab:
+  - {fileID: 5139863098665676719, guid: 4fd726fefb4c1464bb91d08148a99c10, type: 3}
+  - {fileID: 3171083539283125536, guid: 43c59019a2b148e4db9091431eced1ab, type: 3}
+  - {fileID: 5296250784356844361, guid: cf7bd330ac8fc7c449ed7c26e4662571, type: 3}
+  spawnAnomalies: 1
+  minElevationForAnomalies: 1
+  maxElevationForAnomalies: 6
+  anomalyDensity: 0.38
+  anomalyDensityNoiseSize: 7.84
+  anomalyTypeNoiseSize: 10.73
