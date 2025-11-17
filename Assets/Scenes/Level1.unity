@@ -1855,11 +1855,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   biomeType: Tundra
---- !u!4 &1935248398 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2828536025721806489, guid: f9c4937c5822a4c4db7a89f344774960, type: 3}
-  m_PrefabInstance: {fileID: 3901520904868951903}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1935248399 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3020873600043301407, guid: f9c4937c5822a4c4db7a89f344774960, type: 3}
@@ -3094,7 +3089,7 @@ PrefabInstance:
     - target: {fileID: 9048042497825056875, guid: 83fab5881c54bfa47a25d5a75bd43785, type: 3}
       propertyPath: CameraArmTransform
       value: 
-      objectReference: {fileID: 1935248398}
+      objectReference: {fileID: 168910080}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
