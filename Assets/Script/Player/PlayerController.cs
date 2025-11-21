@@ -321,14 +321,22 @@ public class PlayerController : MonoBehaviour
                 JetpackFuel += recoveryJetpackRate * Time.deltaTime;
             }
         }
-        
-        if (MainCameraTransform == null || CameraArmTransform == null || IsStunned)
-            return;
 
         input = new Vector3(_move.x, 0, _move.y);
         Vector3 cameraRotation = new Vector3(0, MainCameraTransform.localEulerAngles.y + CameraArmTransform.localEulerAngles.y, 0);
         Vector3 Dir = Quaternion.Euler(cameraRotation) * input;
         Vector3 movement_dir = (transform.forward * Dir.z + transform.right * Dir.x);
+
+        if (movement_dir != Vector3.zero)
+        {
+            playerVisual.localRotation = Quaternion.Slerp(playerVisual.localRotation, Quaternion.LookRotation(Dir), 0.4f);
+        }
+
+        if (MainCameraTransform == null || CameraArmTransform == null || IsStunned)
+            return;
+
+        
+
         Vector3 currentNormalVelocity = Vector3.Project(rb.linearVelocity, normalVector.normalized);
         //rb.linearVelocity = currentNormalVelocity + (movement_dir * speed);
 
@@ -353,10 +361,7 @@ public class PlayerController : MonoBehaviour
             Jetpack();
         }
 
-        if (movement_dir != Vector3.zero)
-        {
-            playerVisual.localRotation = Quaternion.Slerp(playerVisual.localRotation, Quaternion.LookRotation(Dir), 0.4f);
-        }
+        
 
         
         if (slowDown)
