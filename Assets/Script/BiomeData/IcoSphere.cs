@@ -74,6 +74,9 @@ public class IcoSphere : MonoBehaviour
     private float lastLacunarity = -1;
     private float lastGain = -1;
 
+    private MeshCollider _meshcollider;
+    private bool IsAnomalySpawned;
+
     public class Triangle
     {
         public int v1, v2, v3;
@@ -107,10 +110,12 @@ public class IcoSphere : MonoBehaviour
 
         if (randomSeedOnStart)
         {
-            noiseSeed = UnityEngine.Random.Range(int.MinValue, int.MaxValue);
+            noiseSeed = UnityEngine.Random.Range(-999999999, 999999999);
             Debug.Log($"Nouvelle seed générée : {noiseSeed}");
         }
 
+        _meshcollider = GetComponent<MeshCollider>();
+        IsAnomalySpawned = false;
         GenerateIcoSphere();
 
         if (biome.spawnTrees)
@@ -161,6 +166,14 @@ public class IcoSphere : MonoBehaviour
             Vector2 delta = Mouse.current.delta.ReadValue();
             transform.Rotate(Vector3.up, -delta.x * 0.5f, Space.World);
             transform.Rotate(Vector3.right, delta.y * 0.5f, Space.World);
+        }
+
+        if (_meshcollider.sharedMesh)
+        {
+            if (biome.spawnAnomalies && !IsAnomalySpawned)
+            {
+                SpawnAnomalies();
+            }
         }
 
         if (biome != null)
@@ -300,7 +313,7 @@ public class IcoSphere : MonoBehaviour
 
         mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
-        GetComponent<MeshCollider>().sharedMesh = mesh;
+        _meshcollider.sharedMesh = mesh;
         
 
         vertices = new List<Vector3>();
@@ -335,10 +348,7 @@ public class IcoSphere : MonoBehaviour
             SpawnTrees();
         }
 
-        if (biome.spawnAnomalies)
-        {
-            SpawnAnomalies();
-        }
+        
     }
 
     private void ApplyExtrusion()
@@ -900,12 +910,19 @@ public class IcoSphere : MonoBehaviour
             GameObject inst = Instantiate(prefab, world, Quaternion.identity, anomaliesContainer);
 
             inst.transform.up = transform.TransformDirection(triInfo.normal);
+            if (Physics.Raycast(inst.transform.position + inst.transform.up, -inst.transform.up, out var hit, 10f, 6))
+            {
+                Debug.Log(hit);
+                inst.transform.position = hit.point;
+            }
             inst.transform.Rotate(inst.transform.up, Random.Range(0f, 360f), Space.World);
 
             anomaliesSpawned++;
         }
 
         Debug.Log($"Spawned {anomaliesSpawned} anomalies");
+
+        IsAnomalySpawned = true;
     }
 
     private void CheckAnomalyParametersChanged()

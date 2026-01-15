@@ -32,9 +32,9 @@ public class GameManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
 
-            maxAnomaliesForest = Random.Range(1, 4);
-            maxAnomaliesTundra = Random.Range(1, 4);
-            maxAnomaliesDesert = Random.Range(1, 4);
+            maxAnomaliesForest = Random.Range(6, 10);
+            maxAnomaliesTundra = Random.Range(6, 10);
+            maxAnomaliesDesert = Random.Range(6, 10);
 
             forestbiomeString = $"{forestAnomaliesKilled}/{maxAnomaliesForest}";
             tundrabiomeString = $"{tundraAnomaliesKilled}/{maxAnomaliesTundra}";
