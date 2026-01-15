@@ -40,16 +40,21 @@ Material:
     m_Floats:
     - _BlendPower: 1.5
     - _CellDensity: 30.5
+    - _FoamAmmount: 1.19
+    - _FoamCutoff: 1
+    - _FoamScale: 10
     - _ParticleExitment: 2
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RipplesSlimness: 15.61
-    - _WaveMax: 0.033
+    - _WaveMax: 0.045
     - _WaveMin: 0
     - _WaveScale: 1000
-    - _WaveSpeed: 0.00005
+    - _WaveSpeed: 0.0006
     m_Colors:
     - _BaseColor: {r: 0.5424528, g: 0.6050644, b: 1, a: 1}
+    - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FoamSpeed: {r: 0.1, g: 0.1, b: 0, a: 0}
     - _RipplesColor: {r: 0.23472552, g: 0.52442384, b: 1.6052197, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
