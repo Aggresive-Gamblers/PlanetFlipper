@@ -38,7 +38,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BlendPower: 2
+    - _BlendPower: 1.5
     - _CellDensity: 30.5
     - _ParticleExitment: 2
     - _QueueControl: 0
@@ -50,7 +50,7 @@ Material:
     - _WaveSpeed: 0.00005
     m_Colors:
     - _BaseColor: {r: 0.5424528, g: 0.6050644, b: 1, a: 1}
-    - _RipplesColor: {r: 30.044867, g: 67.12625, b: 205.46812, a: 1}
+    - _RipplesColor: {r: 0.23472552, g: 0.52442384, b: 1.6052197, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &1993838933388204878
