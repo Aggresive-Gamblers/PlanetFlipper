@@ -42,6 +42,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Ambient: 500
     - _BlendPower: 2
     - _Particleexitmpent: 0.1
     - _QueueControl: 0
@@ -52,6 +53,7 @@ Material:
     - _RipplesSpeed: 0.01
     - _Scale1: 1.23
     - _Scale2: 19.5
+    - _Smoothness: 0.1
     - _WaveScale: 46.1
     - _WaveScale_1: 0
     - _WaveSpeed: 0.001
