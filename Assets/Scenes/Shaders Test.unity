@@ -257,7 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3ca7929dad9c342a0b3c15970d5a28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 5
+  duration: 1
   delay: 0
   playOnStart: 1
   curve:

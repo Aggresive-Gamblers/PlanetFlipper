@@ -285,7 +285,14 @@ Shader "Custom/Desintegration"
                     if (_Weight > 0)
                     {
                         float border = step(dissolve - 2.0 * _Weight, _DissolveBorder);
-                        color += _DissolveColor * _Glow * border;
+
+                        if(border > 0)
+                        {
+                            color = _DissolveColor * _Glow * border;
+                                    
+                        } 
+
+
                     }
                 }
                 else // Particle

@@ -49,11 +49,11 @@ Material:
     - _QueueOffset: 0
     - _RippleScale: 16.8
     - _RipplesAmount: 1.65
-    - _RipplesCutoff: 0.85
+    - _RipplesCutoff: 0.5
     - _RipplesSpeed: 0.01
     - _Scale1: 1.23
     - _Scale2: 19.5
-    - _Smoothness: 0.1
+    - _Smoothness: 0
     - _WaveScale: 46.1
     - _WaveScale_1: 0
     - _WaveSpeed: 0.001
@@ -65,7 +65,7 @@ Material:
     - _Color_1: {r: 0.83879274, g: 0.059208903, b: 0, a: 1}
     - _Color_2: {r: 5.3403134, g: 1.7055451, b: 0, a: 1}
     - _RipplesBound: {r: 1, g: 0.3193717, b: 0, a: 1}
-    - _RipplesColor: {r: 2.6701567, g: 0.85277253, b: 0, a: 1}
+    - _RipplesColor: {r: 5.340313, g: 1.705545, b: 0, a: 1}
     - _Vector2: {r: -0.04, g: 1, b: 0, a: 0}
     - _WaveSpeed: {r: 0.001, g: 0.001, b: 0, a: 0}
   m_BuildTextureStacks: []
